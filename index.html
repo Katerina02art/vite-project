@@ -3,44 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="/src/style.css" />  
+    <link rel="stylesheet" href="/src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
-    <div class="header-container">
-      <header class="header-content">
-        <a class="header-logo" href="#0">
-          <img
-            src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg"
-            alt="Логотип компании"
-          />
-        </a>
-        <nav class="header-nav">
-          <ul>
-            <li><a href="#0">главная</a></li>
-            <li><a href="#0">посты</a></li>
-            <li><a href="#0">статьи</a></li>
-            <li><a href="#0">теги</a></li>
-            <li><a href="#0">темы</a></li>
-            <li><a href="#0">контакты</a></li>
-          </ul>
-        </nav>
-      </header>
-      <h1 class="header-intro">Блог о творчестве, спорте, и образе жизни</h1>
-    </div>
+    <!-- этот див нужен для того, чтобы выровнять всю страницу -->
     <div class="page">
+      <div class="container">
+        <header class="header">
+          <a class="header-logo" href="#0">
+            <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="Логотип компании" class="header-logo"/>
+          </a>
+          <nav class="nav">
+            <ul class="header-nav">
+              <li class="header-nav-link"><a class="header-item" href="#0">главная</a></li>
+              <li class="header-nav-link"><a class="header-item" href="#0">посты</a></li>
+              <li class="header-nav-link"><a class="header-item" href="#0">статьи</a></li>
+              <li class="header-nav-link"><a class="header-item" href="#0">теги</a></li>
+              <li class="header-nav-link"><a class="header-item" href="#0">темы</a></li>
+              <li class="header-nav-link"><a class="header-item" href="#0">контакты</a></li>
+            </ul>
+          </nav>
+        </header>
+        <p class="intro">Блог о творчестве, спорте, и образе жизни</p>
+      </div>
+  <div class="content-wrapper">
       <main class="main">
+        <!-- первая статья -->
         <article class="article">
           <img
             class="article-picture"
             src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg"
             alt="фотография утреннего пляжа"
+            loading="lazy"
           />
           <div class="article-content">
-            <ul class="article-tegs-list">
-              <li><a class="tegs-item" href="#0">Travel</a></li>
-              <li><a class="tegs-item" href="#0">Health</a></li>
+            <ul class="article-tags-list">
+              <li><a class="tags-item" href="#0">Travel</a></li>
+              <li><a class="tags-item" href="#0">Health</a></li>
             </ul>
             <h2 class="title-article">
               <a href="#0" class="article-title-link">
@@ -48,13 +49,11 @@
               </a>
             </h2>
             <div class="article-meta">
-              <time datetime="2019-06-10" class="article-date"
-                >10 июня 2019</time
-              >
+              <div class="article-date">10 июня 2019</div>
               <a href="#0" class="article-author">Неизвестный автор</a>
             </div>
             <div class="article-description">
-              <p>
+              <p class="article-item">
                 Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел,
                 запущены фонтаны города… Музеи еще закрыты. Что посмотреть?
               </p>
@@ -62,16 +61,17 @@
           </div>
         </article>
 
+        <!-- вторая статья -->
         <article class="article">
           <img
             class="article-picture"
             src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg"
-            alt="девушка в асане"
+            alt="девушка в позе йоги"
           />
           <div class="article-content">
-            <ul class="article-tegs-list">
-              <li><a class="tegs-item" href="#0">health</a></li>
-              <li><a class="tegs-item" href="#0">lifestyle</a></li>
+            <ul class="article-tags-list">
+              <li><a class="tags-item" href="#0">health</a></li>
+              <li><a class="tags-item" href="#0">lifestyle</a></li>
             </ul>
             <h2 class="title-article">
               <a href="#0" class="article-title-link">
@@ -79,20 +79,18 @@
               </a>
             </h2>
             <div class="article-meta">
-              <time datetime="2019-06-10" class="article-date">
-                10 июня 2019
-              </time>
+              <div class="article-date">10 июня 2019</div>
               <a href="#0" class="article-author">Неизвестный автор</a>
             </div>
             <div class="article-description">
-              <p>
+              <p class="article-item">
                 Расскажем, какие упражнения выбрать и как сделать коврик для
                 занятий йогой из того, что можно найти в шкафу.
               </p>
             </div>
           </div>
         </article>
-
+        <!-- третья статья -->
         <article class="article">
           <img
             class="article-picture"
@@ -100,8 +98,8 @@
             alt="open air фестиваль"
           />
           <div class="article-content">
-            <ul class="article-tegs-list">
-              <li><a class="tegs-item" href="#0">Music</a></li>
+            <ul class="article-tags-list">
+              <li><a class="tags-item" href="#0">Music</a></li>
             </ul>
             <h2 class="title-article">
               <a href="#0" class="article-title-link">
@@ -109,13 +107,11 @@
               </a>
             </h2>
             <div class="article-meta">
-              <time datetime="2019-06-10" class="artile-date"
-                >10 июня 2019</time
-              >
+              <div class="article-date">10 июня 2019</div>
               <a href="#0" class="article-author">Неизвестный автор</a>
             </div>
             <div class="article-description">
-              <p>
+              <p class="article-item">
                 Лето на носу, а с ним и музыкальные фестивали. На каком же из
                 них вы разобьёте свою палатку?
               </p>
@@ -123,7 +119,7 @@
             </div>
           </div>
         </article>
-
+        <!-- четвертая статья -->
         <article class="article">
           <img
             class="article-picture"
@@ -131,9 +127,9 @@
             alt="сервированный обеденный стол"
           />
           <div class="article-content">
-            <ul class="article-tegs-list">
-              <li><a class="tegs-item" href="#0">Lyfestyle</a></li>
-              <li><a class="tegs-item" href="#0">Food</a></li>
+            <ul class="article-tags-list">
+              <li><a class="tags-item" href="#0">Lyfestyle</a></li>
+              <li><a class="tags-item" href="#0">Food</a></li>
             </ul>
             <h2 class="title-article">
               <a href="#0" class="article-title-link">
@@ -141,20 +137,18 @@
               </a>
             </h2>
             <div class="article-meta">
-              <time datetime="2019-06-10" class="artile-date"
-                >10 июня 2019</time
-              >
+              <div class="article-date">10 июня 2019</div>
               <a href="#0" class="article-author">Неизвестный автор</a>
             </div>
             <div class="article-description">
-              <p>
+              <p class="article-item">
                 Узнаем основы проектирования новых пищевых и около-пищевых
                 опытов, вскроем физику, химию и микробиологию еды.
               </p>
             </div>
           </div>
         </article>
-
+        <!-- пятая статья -->
         <article class="article">
           <img
             class="article-picture"
@@ -162,10 +156,10 @@
             alt="diy подушка"
           />
           <div class="article-content">
-            <ul class="article-tegs-list">
-              <li><a class="tegs-item" href="#0">Lyfestyle</a></li>
-              <li><a class="tegs-item" href="#0">Interior</a></li>
-              <li><a class="tegs-item" href="#0">Art</a></li>
+            <ul class="article-tags-list">
+              <li><a class="tags-item" href="#0">Lyfestyle</a></li>
+              <li><a class="tags-item" href="#0">Interior</a></li>
+              <li><a class="tags-item" href="#0">Art</a></li>
             </ul>
             <h2 class="title-article">
               <a href="#0" class="article-title-link">
@@ -173,13 +167,11 @@
               </a>
             </h2>
             <div class="article-meta">
-              <time datetime="2019-06-10" class="artile-date"
-                >10 июня 2019</time
-              >
+              <div class="article-date">10 июня 2019</div>
               <a href="#0" class="article-author">Неизвестный автор</a>
             </div>
             <div class="article-description">
-              <p>
+              <p class="article-item">
                 Подушки для дивана целесообразнее заказать в съемных чехлах на
                 молнии, если потребуется чистка подушек, проще снять чехлы, чем
                 везти подушку в химчистку
@@ -187,7 +179,7 @@
             </div>
           </div>
         </article>
-
+        <!-- шестая сатья -->
         <article class="article">
           <img
             class="article-picture"
@@ -195,9 +187,9 @@
             alt="туристы в горах"
           />
           <div class="article-content">
-            <ul class="article-tegs-list">
-              <li><a class="tegs-item" href="#0">Travel</a></li>
-              <li><a class="tegs-item" href="#0">Lifestyle</a></li>
+            <ul class="article-tags-list">
+              <li><a class="tags-item" href="#0">Travel</a></li>
+              <li><a class="tags-item" href="#0">Lifestyle</a></li>
             </ul>
             <h2 class="title-article">
               <a href="#0" class="article-title-link">
@@ -205,13 +197,11 @@
               </a>
             </h2>
             <div class="article-meta">
-              <time datetime="2019-06-10" class="artile-date"
-                >10 июня 2019</time
-              >
+              <div class="article-date">10 июня 2019</div>
               <a href="#0" class="article-author">Неизвестный автор</a>
             </div>
             <div class="article-description">
-              <p>
+              <p class="article-item">
                 Для начала нужно определиться, в каком формате пройдёт ваше
                 путешествие. Это зависит от многих факторов, не только от ваших
                 желаний и интересов.
@@ -219,7 +209,7 @@
             </div>
           </div>
         </article>
-
+        <!-- cедьмая статья -->
         <article class="article">
           <img
             class="article-picture"
@@ -227,9 +217,9 @@
             alt="сервированный обеденный стол"
           />
           <div class="article-content">
-            <ul class="article-tegs-list">
-              <li><a class="tegs-item" href="#0">Lyfestyle</a></li>
-              <li><a class="tegs-item" href="#0">Food</a></li>
+            <ul class="article-tags-list">
+              <li><a class="tags-item" href="#0">Lyfestyle</a></li>
+              <li><a class="tags-item" href="#0">Food</a></li>
             </ul>
             <h2 class="title-article">
               <a href="#0" class="article-title-link">
@@ -237,13 +227,11 @@
               </a>
             </h2>
             <div class="article-meta">
-              <time datetime="2019-06-10" class="artile-date"
-                >10 июня 2019</time
-              >
+              <div class="article-date">10 июня 2019</div>
               <a href="#0" class="article-author">Неизвестный автор</a>
             </div>
             <div class="article-description">
-              <p>
+              <p class="article-item">
                 Узнаем основы проектирования новых пищевых и около-пищевых
                 опытов, вскроем физику, химию и микробиологию еды.
               </p>
@@ -251,7 +239,8 @@
           </div>
         </article>
       </main>
-      <aside class="side-bar">
+      <!-- вторая колонка -->
+      <aside class="aside">
         <section class="side-posts">
           <h3 class="side-bar-title">новые посты</h3>
           <article class="post-item">
@@ -261,29 +250,33 @@
               alt="человек на пляже"
             />
             <div class="post-content">
-              <time datetime="14-06-2019" class="post-time">14 июня 2019</time>
+              <div class="post-time">14 июня 2019</div>
               <h4 class="post-title">
-                <a href="#0" class="post-title-link"
-                  >10 мест, ради которых стоит проснуться</a
-                >
+                <a href="#0" class="post-title-link">
+                  10 мест, ради которых стоит проснуться
+                </a>
               </h4>
             </div>
-          </article>
+        </article>
 
-          <article class="post-item">
+        <!-- вторая статья -->
+        <article class="post-item">
             <img
               class="post-picture"
               src="https://netology-code.github.io/html-2-diploma/sources/images/151.jpg"
               alt="девушка занимается йогой"
             />
             <div class="post-content">
-              <time datetime="14-06-2019" class="post-time">14 июня 2019</time>
+              <div class="post-time">14 июня 2019</div>
               <h4 class="post-title">
-                <a href="#0" class="post-title-link">Йога для домашних</a>
+                <a href="#0" class="post-title-link">
+                  Йога для домашних
+                </a>
               </h4>
             </div>
           </article>
 
+          <!-- третья статья -->
           <article class="post-item">
             <img
               class="post-picture"
@@ -291,15 +284,16 @@
               alt="балкони кресло"
             />
             <div class="post-content">
-              <time datetime="14-06-2019" class="post-time">14 июня 2019</time>
+              <div class="post-time">14 июня 2019</div>
               <h4 class="post-title">
-                <a href="#0" class="post-title-link"
-                  >Как мы превратили классное место в балкон</a
-                >
+                <a href="#0" class="post-title-link">
+                  Как мы превратили классное место в балкон
+                </a>
               </h4>
             </div>
           </article>
 
+          <!-- четвертая статья -->
           <article class="post-item">
             <img
               class="post-picture"
@@ -307,15 +301,14 @@
               alt="стол с блюдами"
             />
             <div class="post-content">
-              <time datetime="14-06-2019" class="post-time">14 июня 2019</time>
+              <div class="post-time">14 июня 2019</div>
               <h4 class="post-title">
-                <a href="#0" class="post-title-link"
-                  >Кулинарный подход к науке</a
-                >
+                <a href="#0" class="post-title-link">Кулинарный подход к науке</a>
               </h4>
             </div>
           </article>
 
+          <!-- пятая статья -->
           <article class="post-item">
             <img
               class="post-picture"
@@ -323,35 +316,37 @@
               alt="девушки с распущенными волосами"
             />
             <div class="post-content">
-              <time datetime="14-06-2019" class="post-time">14 июня 2019</time>
+              <div class="post-time">14 июня 2019</div>
               <h4 class="post-title">
-                <a href="#0" class="post-title-link"
-                  >лучшие прически для распущенных волос</a
-                >
+                <a href="#0" class="post-title-link">
+                  лучшие прически для распущенных волос
+                </a>
               </h4>
             </div>
-          </article>
-          <section class="search-container">
+        </article>
+
+            <!-- форма с поиском -->
+          <div class="search-container">
+            <search class="search">
           <form action="" method="get" class="search-label">
-            <label for="search" class="search-label">
-              <span class="visually-hidden">Поле поиска</span>
+            <span class="visually-hidden">Поле поиска</span>
               <input
                 type="search"
                 class="search-field"
                 placeholder="Найти..."
                 required
               />
-            </label>
-            <button class="search-button">
+          <button class="search-button">
               <span class="visually-hidden">Кнопка поиска</span>
             </button>
           </form>
-        </section>
+          </search>
+        </div>
 
-        <section class="subcribe">
-          <h3 class="side-bar-title">Рассылка</h3>
-          <form action="" method="get" class="subcribe-mail">
-            <label for="email">
+        <!-- форма с подпиской -->
+        <div class="subcribe">
+        <h3 class="side-bar-title">Рассылка</h3>
+        <form action="" method="get" class="subcribe-mail">
               <input
                 type="email"
                 class="subcribe-field"
@@ -359,115 +354,108 @@
                 required
               />
               <span class="visually-hidden">Введите ваш email</span>
-            </label>
             <button class="subcribe-button" type="submit">
               Подписаться
               <span class="visually-hidden">Кнопка подписаться</span>
             </button>
           </form>
-        </section>
-
-        <section class="tegs">
+        </div>
+        <!-- список тегов -->
+        <div class="tags">
           <h3 class="side-bar-title">Теги</h3>
-          <ul class="tegs-list">
-            <li class="tegs-lest-item">
-              <a href="#0" class="tegs-list-item">fashion</a>
+          <ul class="tags-list">
+            <li class="tags-lest-item">
+              <a href="#0" class="tags-list-item">fashion</a>
             </li>
-            <li class="tegs-lest-item">
-              <a href="#0" class="tegs-list-item">music</a>
+            <li class="tags-lest-item">
+              <a href="#0" class="tags-list-item">music</a>
             </li>
-            <li class="tegs-lest-item">
-              <a href="#0" class="tegs-list-item">lifestyle</a>
+            <li class="tags-lest-item">
+              <a href="#0" class="tags-list-item">lifestyle</a>
             </li>
-            <li class="tegs-lest-item">
-              <a href="#0" class="tegs-list-item">art</a>
+            <li class="tags-lest-item">
+              <a href="#0" class="tags-list-item">art</a>
             </li>
-            <li class="tegs-lest-item">
-              <a href="#0" class="tegs-list-item">interior</a>
+            <li class="tags-lest-item">
+              <a href="#0" class="tags-list-item">interior</a>
             </li>
-            <li class="tegs-lest-item">
-              <a href="#0" class="tegs-list-item">travel</a>
+            <li class="tags-lest-item">
+              <a href="#0" class="tags-list-item">travel</a>
             </li>
-            <li class="tegs-lest-item">
-              <a href="#0" class="tegs-list-item">food</a>
+            <li class="tags-lest-item">
+              <a href="#0" class="tags-list-item">food</a>
             </li>
-            <li class="tegs-lest-item">
-              <a href="#0" class="tegs-list-item">health</a>
+            <li class="tags-lest-item">
+              <a href="#0" class="tags-list-item">health</a>
             </li>
           </ul>
-        </section>
+        </div>
 
+        <!-- темы и индексы сверху -->
         <section class="categories">
           <h3 class="side-bar-title">темы</h3>
           <ul class="categories-list">
             <li class="categories-list-item">
               <span class="category-wrapper">
                 <a href="#0" class="categories-list-link">Красота</a>
-                <sup>12</sup>
+                <span class="index-categories">12</span>
               </span>
             </li>
             <li class="categories-list-item">
               <span class="category-wrapper">
                 <a href="#0" class="categories-list-link">Здоровье</a>
-                <sup>4</sup>
+                <span class="index-categories">4</span>
               </span>
             </li>
             <li class="categories-list-item">
               <span class="category-wrapper">
                 <a href="#0" class="categories-list-link">Образ жизни</a>
-                <sup>145</sup>
+                <span class="index-categories">145</span>
               </span>
             </li>
             <li class="categories-list-item">
               <span class="category-wrapper">
                 <a href="#0" class="categories-list-link">Музыка</a>
-                <sup>28</sup>
+                <span class="index-categories">28</span>
               </span>
             </li>
             <li class="categories-list-item">
               <span class="category-wrapper">
                 <a href="#0" class="categories-list-link">Спорт</a>
-                <sup>62</sup>
+                <span class="index-categories">62</span>
               </span>
             </li>
             <li class="categories-list-item">
               <span class="category-wrapper">
                 <a href="#0" class="categories-list-link">Йога</a>
-                <sup>8</sup>
+                <span class="index-categories">8</span>
               </span>
             </li>
           </ul>
         </section>
       </aside>
-    </div>
-
-    <footer class="footer">
-      <div class="footer-wrapper">
-        <address class="footer-socials">
-          <ul class="footer-socials-list">
-            <li class="footer-socials-item">
-              <a href="#0" class="footer-icon footer__socials-dribbble"
-                ><span class="visually-hidden">ссылка на dribbble</span></a
-              >
-            </li>
-            <li class="footer-socials-item">
-              <a href="#0" class="footer-icon footer__socials-pinterest"
-                ><span class="visually-hidden">ссылка на pinterest</span></a
-              >
-            </li>
-            <li class="footer-socials-item">
-              <a href="#0" class="footer-icon footer__socials-tumblr"
-                ><span class="visually-hidden">ссылка на tumblr</span></a
-              >
-            </li>
-          </ul>
-        </address>
-        <div class="footer-copyrights">
-          <a href="#0" class="footer-copyrights-link"
-            >Copyright © 2009–2019 City Blog LLC.</a
-          >
-        </div>
       </div>
-    </footer>
+      <!-- подвал -->
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <address class="footer-socials">
+            <ul class="footer-socials-list">
+              <li class="footer-socials-item">
+                <a href="#0" class="footer-icon footer__socials-dribbble"><span class="visually-hidden">dribbble</span></a>
+              </li>
+              <li class="footer-socials-item">
+                <a href="#0" class="footer-icon footer__socials-pinterest"><span class="visually-hidden">pinterest</span></a>
+              </li>
+              <li class="footer-socials-item">
+                <a href="#0" class="footer-icon footer__socials-tumblr"><span class="visually-hidden">tumblr</span></a>
+              </li>
+            </ul>
+          </address>
+          <div class="footer-copyrights">
+            <a href="#0" class="footer-copyrights-link">Copyright © 2009–2019 City Blog LLC.</a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
