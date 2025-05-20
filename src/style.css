@@ -116,8 +116,7 @@ body {
   display: flex;
   width: 100%;
   max-width: 1200px;
-  margin: 65px auto 0;
-  padding: 0 15px;
+  margin: 60px auto 0;
   gap: 125px;
   box-sizing: border-box;
 }
@@ -202,6 +201,7 @@ body {
 .article-date {
   color: #9b9b9b;
   font-size: 12px;
+  line-height: 1.4;
 }
 
 .article-author {
@@ -222,11 +222,10 @@ body {
   color: #0f0d0e;
   font-size: 15px;
   line-height: 1.5;
+  margin: 0;
 }
 
 .aside {
-  position: relative;
-  right: 20px;
   width: 272px;
   margin: 0;
   padding: 0;
@@ -269,6 +268,7 @@ body {
 .post-time {
   color: #888;
   font-size: 12px;
+  line-height: 1.4;
 }
 
 .post-title {
@@ -429,6 +429,7 @@ body {
 .index-categories {
   font-weight: bold;
   font-size: 12px;
+  line-height: 1.4;
   color: #b59f5b;
   position: relative;
   top: -0.5em;
