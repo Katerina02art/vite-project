@@ -11,6 +11,7 @@
     <!-- этот див нужен для того, чтобы выровнять всю страницу -->
     <div class="page">
       <div class="container">
+        <div class="content-banner">
         <header class="header">
           <a class="header-logo" href="#0">
             <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="Логотип компании" class="header-logo"/>
@@ -43,7 +44,7 @@
               <li><a class="tags-item" href="#0">Travel</a></li>
               <li><a class="tags-item" href="#0">Health</a></li>
             </ul>
-            <h2 class="title-article">
+            <h2 class="article-title">
               <a href="#0" class="article-title-link">
                 10 мест, ради которых стоит проснуться на рассвете
               </a>
@@ -73,9 +74,9 @@
               <li><a class="tags-item" href="#0">health</a></li>
               <li><a class="tags-item" href="#0">lifestyle</a></li>
             </ul>
-            <h2 class="title-article">
+            <h2 class="article-title">
               <a href="#0" class="article-title-link">
-                10 мест, ради которых стоит проснуться на рассвете
+                ЙОга для начинающих в домашних условиях
               </a>
             </h2>
             <div class="article-meta">
@@ -101,7 +102,7 @@
             <ul class="article-tags-list">
               <li><a class="tags-item" href="#0">Music</a></li>
             </ul>
-            <h2 class="title-article">
+            <h2 class="article-title">
               <a href="#0" class="article-title-link">
                 Лучшие музыкальные фестивали этого лета
               </a>
@@ -131,7 +132,7 @@
               <li><a class="tags-item" href="#0">Lyfestyle</a></li>
               <li><a class="tags-item" href="#0">Food</a></li>
             </ul>
-            <h2 class="title-article">
+            <h2 class="article-title">
               <a href="#0" class="article-title-link">
                 Наукоёмкий подход к кулинарии
               </a>
@@ -161,7 +162,7 @@
               <li><a class="tags-item" href="#0">Interior</a></li>
               <li><a class="tags-item" href="#0">Art</a></li>
             </ul>
-            <h2 class="title-article">
+            <h2 class="article-title">
               <a href="#0" class="article-title-link">
                 делаем модные принты на подушках для интерьера
               </a>
@@ -191,7 +192,7 @@
               <li><a class="tags-item" href="#0">Travel</a></li>
               <li><a class="tags-item" href="#0">Lifestyle</a></li>
             </ul>
-            <h2 class="title-article">
+            <h2 class="article-title">
               <a href="#0" class="article-title-link">
                 Как первый раз отправиться в горы?
               </a>
@@ -221,7 +222,7 @@
               <li><a class="tags-item" href="#0">Lyfestyle</a></li>
               <li><a class="tags-item" href="#0">Food</a></li>
             </ul>
-            <h2 class="title-article">
+            <h2 class="article-title">
               <a href="#0" class="article-title-link">
                 Наукоёмкий подход к кулинарии
               </a>
@@ -243,6 +244,7 @@
       <aside class="aside">
         <section class="side-posts">
           <h3 class="side-bar-title">новые посты</h3>
+        </section>
           <article class="post-item">
             <img
               class="post-picture"
@@ -364,29 +366,29 @@
         <div class="tags">
           <h3 class="side-bar-title">Теги</h3>
           <ul class="tags-list">
-            <li class="tags-lest-item">
-              <a href="#0" class="tags-list-item">fashion</a>
+            <li class="tags-list-item">
+              <a href="#0" class="tags-link-item">fashion</a>
             </li>
-            <li class="tags-lest-item">
-              <a href="#0" class="tags-list-item">music</a>
+            <li class="tags-list-item">
+              <a href="#0" class="tags-link-item">music</a>
             </li>
-            <li class="tags-lest-item">
-              <a href="#0" class="tags-list-item">lifestyle</a>
+            <li class="tags-list-item">
+              <a href="#0" class="tags-link-item">lifestyle</a>
             </li>
-            <li class="tags-lest-item">
-              <a href="#0" class="tags-list-item">art</a>
+            <li class="tags-list-item">
+              <a href="#0" class="tags-link-item">art</a>
             </li>
-            <li class="tags-lest-item">
-              <a href="#0" class="tags-list-item">interior</a>
+            <li class="tags-list-item">
+              <a href="#0" class="tags-link-item">interior</a>
             </li>
-            <li class="tags-lest-item">
-              <a href="#0" class="tags-list-item">travel</a>
+            <li class="tags-list-item">
+              <a href="#0" class="tags-link-item">travel</a>
             </li>
-            <li class="tags-lest-item">
-              <a href="#0" class="tags-list-item">food</a>
+            <li class="tags-list-item">
+              <a href="#0" class="tags-link-item">food</a>
             </li>
-            <li class="tags-lest-item">
-              <a href="#0" class="tags-list-item">health</a>
+            <li class="tags-list-item">
+              <a href="#0" class="tags-link-item">health</a>
             </li>
           </ul>
         </div>
@@ -432,13 +434,12 @@
               </span>
             </li>
           </ul>
-        </section>
       </aside>
       </div>
       <!-- подвал -->
       <footer class="footer">
         <div class="footer-wrapper">
-          <address class="footer-socials">
+          <div class="footer-socials">
             <ul class="footer-socials-list">
               <li class="footer-socials-item">
                 <a href="#0" class="footer-icon footer__socials-dribbble"><span class="visually-hidden">dribbble</span></a>
@@ -450,12 +451,13 @@
                 <a href="#0" class="footer-icon footer__socials-tumblr"><span class="visually-hidden">tumblr</span></a>
               </li>
             </ul>
-          </address>
+          </div>
           <div class="footer-copyrights">
             <a href="#0" class="footer-copyrights-link">Copyright © 2009–2019 City Blog LLC.</a>
           </div>
         </div>
       </footer>
+    </div>
     </div>
   </body>
 </html>
